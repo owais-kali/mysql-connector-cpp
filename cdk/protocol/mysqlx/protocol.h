@@ -87,7 +87,7 @@ typedef unsigned short int  msg_type_t;
 // byte order and vice-versa.
 
 #if defined(HAVE_ENDIAN_H)
-  #include <sys/endian.h>
+  #include <endian.h>
 #elif defined(HAVE_BYTEORDER_H)
   #include <sys/byteorder.h>
   #define bswap32(X) BSWAP_32(X)
